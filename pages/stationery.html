@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+CampusKart | Stationery
+</title>
+
+<link
+rel="stylesheet"
+href="../css/style.css">
+
+</head>
+
+<body>
+
+
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+<div class="logo">
+
+<a href="../index.html">
+
+<img
+src="../images/iykyk.jpeg" width="250px">
+ 
+</a>
+
+</div>
+
+
+
+<nav>
+
+<ul class="nav-links">
+
+<li><a href="../index.html">Home</a></li>
+
+<li><a href="../products.html">Products</a></li>
+
+<li><a href="../about.html">About</a></li>
+
+</ul>
+
+</nav>
+
+
+
+<div class="nav-actions">
+
+<button
+class="icon-btn"
+onclick="openSearch()">
+
+🔍
+
+</button>
+
+
+
+<a href="../wishlist.html">
+
+<button class="icon-btn">
+
+♡
+
+</button>
+
+</a>
+
+
+
+<a href="../cart.html">
+
+<button class="icon-btn">
+
+🛒
+
+<span id="cartCount">
+
+0
+
+</span>
+
+</button>
+
+</a>
+
+</div>
+
+</header>
+
+
+
+
+
+<section class="home-categories">
+
+<h2>
+
+Stationery
+
+</h2>
+
+<p
+style="
+text-align:center;
+margin-bottom:40px;
+color:#666;
+">
+
+Write. Create. Organize.
+
+</p>
+
+
+
+
+
+<div class="products">
+
+
+
+
+<div class="product-card">
+
+<img src="../images/pens.jpg">
+
+<h3>
+
+Pens
+
+</h3>
+
+<p>
+
+₹79
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+name:"Pens",
+price:79,
+img:"images/pens.jpg"
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+name:"Pens",
+price:79,
+img:"images/pens.jpg"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/pencil.webp">
+
+<h3>
+
+Pencils
+
+</h3>
+
+<p>
+
+₹59
+
+</p>
+
+<div class="product-actions">
+
+<button class="primary-btn"
+onclick='addToCart({name:"Pencils",price:59,img:"images/pencil.webp"})'>
+
+Add To Cart
+
+</button>
+
+<button class="secondary-btn"
+onclick='addToWishlist({name:"Pencils",price:59,img:"images/pencil.webp"})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/eraser.jpg">
+
+<h3>
+
+Erasers
+
+</h3>
+
+<p>
+
+₹29
+
+</p>
+
+<div class="product-actions">
+
+<button class="primary-btn"
+onclick='addToCart({name:"Erasers",price:29,img:"images/eraser.jpg"})'>
+
+Add To Cart
+
+</button>
+
+<button class="secondary-btn"
+onclick='addToWishlist({name:"Erasers",price:29,img:"images/eraser.jpg"})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/sharpener.webp">
+
+<h3>
+
+Sharpeners
+
+</h3>
+
+<p>
+
+₹49
+
+</p>
+
+<div class="product-actions">
+
+<button class="primary-btn"
+onclick='addToCart({name:"Sharpeners",price:49,img:"images/sharpener.webp"})'>
+
+Add To Cart
+
+</button>
+
+<button class="secondary-btn"
+onclick='addToWishlist({name:"Sharpeners",price:49,img:"images/sharpener.webp"})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/highlighter.jpg">
+
+<h3>
+
+Highlighters
+
+</h3>
+
+<p>
+
+₹119
+
+</p>
+
+<div class="product-actions">
+
+<button class="primary-btn"
+onclick='addToCart({name:"Highlighters",price:119,img:"images/highlighter.jpg"})'>
+
+Add To Cart
+
+</button>
+
+<button class="secondary-btn"
+onclick='addToWishlist({name:"Highlighters",price:119,img:"images/highlighter.jpg"})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/marker.webp">
+
+<h3>
+
+Markers
+
+</h3>
+
+<p>
+
+₹149
+
+</p>
+
+<div class="product-actions">
+
+<button class="primary-btn"
+onclick='addToCart({name:"Markers",price:149,img:"images/marker.webp"})'>
+
+Add To Cart
+
+</button>
+
+<button class="secondary-btn"
+onclick='addToWishlist({name:"Markers",price:149,img:"images/marker.webp"})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/geometry.jpg">
+
+<h3>
+
+Geometry Box
+
+</h3>
+
+<p>
+
+₹249
+
+</p>
+
+<div class="product-actions">
+
+<button class="primary-btn"
+onclick='addToCart({name:"Geometry Box",price:249,img:"images/geometry.jpg"})'>
+
+Add To Cart
+
+</button>
+
+<button class="secondary-btn"
+onclick='addToWishlist({name:"Geometry Box",price:249,img:"images/geometry.jpg"})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/scale.jpg">
+
+<h3>
+
+Scale
+
+</h3>
+
+<p>
+
+₹39
+
+</p>
+
+<div class="product-actions">
+
+<button class="primary-btn"
+onclick='addToCart({name:"Scale",price:39,img:"images/scale.jpg"})'>
+
+Add To Cart
+
+</button>
+
+<button class="secondary-btn"
+onclick='addToWishlist({name:"Scale",price:39,img:"images/scale.jpg"})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/compass.jpg">
+
+<h3>
+
+Compass
+
+</h3>
+
+<p>
+
+₹69
+
+</p>
+
+<div class="product-actions">
+
+<button class="primary-btn"
+onclick='addToCart({name:"Compass",price:69,img:"images/compass.jpg"})'>
+
+Add To Cart
+
+</button>
+
+<button class="secondary-btn"
+onclick='addToWishlist({name:"Compass",price:69,img:"images/compass.jpg"})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/sketchpens.jpg">
+
+<h3>
+
+Sketch Pens
+
+</h3>
+
+<p>
+
+₹199
+
+</p>
+
+<div class="product-actions">
+
+<button class="primary-btn"
+onclick='addToCart({name:"Sketch Pens",price:199,img:"images/sketchpens.jpg"})'>
+
+Add To Cart
+
+</button>
+
+<button class="secondary-btn"
+onclick='addToWishlist({name:"Sketch Pens",price:199,img:"images/sketchpens.jpg"})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/whiteboard marker.webp">
+
+<h3>
+
+Whiteboard Marker
+
+</h3>
+
+<p>
+
+₹99
+
+</p>
+
+<div class="product-actions">
+
+<button class="primary-btn"
+onclick='addToCart({name:"Whiteboard Marker",price:99,img:"images/whiteboard marker.webp"})'>
+
+Add To Cart
+
+</button>
+
+<button class="secondary-btn"
+onclick='addToWishlist({name:"Whiteboard Marker",price:99,img:"images/whiteboard marker.webp"})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+<div
+style="
+text-align:center;
+margin-top:50px;
+">
+
+<a href="../products.html">
+
+<button class="secondary-btn">
+
+Continue Shopping
+
+</button>
+
+</a>
+
+</div>
+
+</section>
+
+
+
+
+
+<footer>
+
+<div>
+
+CampusKart
+
+</div>
+
+<div>
+
+Everything a Student Needs
+
+</div>
+
+<div>
+
+© 2026
+
+</div>
+
+</footer>
+
+
+
+
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>

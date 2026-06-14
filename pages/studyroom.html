@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+CampusKart | Study Room Setup
+</title>
+
+<link
+rel="stylesheet"
+href="../css/style.css">
+
+</head>
+
+<body>
+
+
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+<div class="logo">
+
+<a href="../index.html">
+
+<img
+src="../images/iykyk.jpeg" width="250px">
+
+</a>
+
+</div>
+
+
+
+<nav>
+
+<ul class="nav-links">
+
+<li>
+
+<a href="../index.html">
+
+Home
+
+</a>
+
+</li>
+
+<li>
+
+<a href="../products.html">
+
+Products
+
+</a>
+
+</li>
+
+<li>
+
+<a href="../about.html">
+
+About
+
+</a>
+
+</li>
+
+</ul>
+
+</nav>
+
+
+
+<div class="nav-actions">
+
+<button
+class="icon-btn"
+onclick="openSearch()">
+
+🔍
+
+</button>
+
+
+
+<a href="../wishlist.html">
+
+<button class="icon-btn">
+
+♡
+
+</button>
+
+</a>
+
+
+
+<a href="../cart.html">
+
+<button class="icon-btn">
+
+🛒
+
+<span id="cartCount">
+
+0
+
+</span>
+
+</button>
+
+</a>
+
+</div>
+
+</header>
+
+
+
+
+
+<section class="home-categories">
+
+<h2>
+
+Study Room Setup
+
+</h2>
+
+<p
+style="
+text-align:center;
+margin-bottom:40px;
+color:#666;
+">
+
+Build a space that helps you focus.
+
+</p>
+
+
+
+
+
+<div class="products">
+
+
+
+
+<div class="product-card">
+
+<img
+src="../images/study table.jpg">
+
+<h3>
+
+Study Table
+
+</h3>
+
+<p>
+
+₹6499
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+name:"Study Table",
+price:6499,
+img:"images/study table.jpg"
+})'>
+
+Add To Cart
+
+</button>
+
+
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+name:"Study Table",
+price:6499,
+img:"images/study table.jpg"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img
+src="../images/chair.jpg">
+
+<h3>
+
+Chair
+
+</h3>
+
+<p>
+
+₹3999
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+name:"Chair",
+price:3999,
+img:"images/chair.jpg"
+})'>
+
+Add To Cart
+
+</button>
+
+
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+name:"Chair",
+price:3999,
+img:"images/chair.jpg"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img
+src="../images/desklamp.jpg">
+
+<h3>
+
+Desk Lamp
+
+</h3>
+
+<p>
+
+₹999
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+name:"Desk Lamp",
+price:999,
+img:"images/desklamp.jpg"
+})'>
+
+Add To Cart
+
+</button>
+
+
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+name:"Desk Lamp",
+price:999,
+img:"images/desklamp.jpg"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img
+src="../images/clock.jpg">
+
+<h3>
+
+Clock
+
+</h3>
+
+<p>
+
+₹699
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+name:"Clock",
+price:699,
+img:"images/clock.jpg"
+})'>
+
+Add To Cart
+
+</button>
+
+
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+name:"Clock",
+price:699,
+img:"images/clock.jpg"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img
+src="../images/whiteboard.jpg">
+
+<h3>
+
+Whiteboard
+
+</h3>
+
+<p>
+
+₹1299
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+name:"Whiteboard",
+price:1299,
+img:"images/whiteboard.jpg"
+})'>
+
+Add To Cart
+
+</button>
+
+
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+name:"Whiteboard",
+price:1299,
+img:"images/whiteboard.jpg"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img
+src="../images/calender.jpg">
+
+<h3>
+
+Calendar
+
+</h3>
+
+<p>
+
+₹249
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+name:"Calendar",
+price:249,
+img:"images/calender.jpg"
+})'>
+
+Add To Cart
+
+</button>
+
+
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+name:"Calendar",
+price:249,
+img:"images/calender.jpg"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img
+src="../images/bookshelf.jpg">
+
+<h3>
+
+Book Shelf
+
+</h3>
+
+<p>
+
+₹4999
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+name:"Book Shelf",
+price:4999,
+img:"images/bookshelf.jpg"
+})'>
+
+Add To Cart
+
+</button>
+
+
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+name:"Book Shelf",
+price:4999,
+img:"images/bookshelf.jpg"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+<div
+style="
+text-align:center;
+margin-top:50px;
+">
+
+<a href="../products.html">
+
+<button class="secondary-btn">
+
+Continue Shopping
+
+</button>
+
+</a>
+
+</div>
+
+</section>
+
+
+
+
+
+<footer>
+
+<div>
+
+CampusKart
+
+</div>
+
+<div>
+
+Everything a Student Needs
+
+</div>
+
+<div>
+
+© 2026
+
+</div>
+
+</footer>
+
+
+
+
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>

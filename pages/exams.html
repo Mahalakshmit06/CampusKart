@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+CampusKart | Exam Essentials
+</title>
+
+<link
+rel="stylesheet"
+href="../css/style.css">
+
+</head>
+
+<body>
+
+
+
+<header class="navbar">
+
+<div class="logo">
+
+<a href="../index.html">
+
+<img
+src="../images/iykyk.jpeg" width="250px">
+
+</a>
+
+</div>
+
+
+
+<nav>
+
+<ul class="nav-links">
+
+<li><a href="../index.html">Home</a></li>
+
+<li><a href="../products.html">Products</a></li>
+
+<li><a href="../about.html">About</a></li>
+
+</ul>
+
+</nav>
+
+
+
+<div class="nav-actions">
+
+<button
+class="icon-btn"
+onclick="openSearch()">
+
+🔍
+
+</button>
+
+
+
+<a href="../wishlist.html">
+
+<button class="icon-btn">
+
+♡
+
+</button>
+
+</a>
+
+
+
+<a href="../cart.html">
+
+<button class="icon-btn">
+
+🛒
+
+<span id="cartCount">
+
+0
+
+</span>
+
+</button>
+
+</a>
+
+</div>
+
+</header>
+
+
+
+
+
+<section class="home-categories">
+
+<h2>
+
+Exam Essentials
+
+</h2>
+
+<p
+style="
+text-align:center;
+margin-bottom:40px;
+color:#666;
+">
+
+Stay prepared. Stay confident.
+
+</p>
+
+
+
+
+
+<div class="products">
+
+
+
+
+<div class="product-card">
+
+<img src="../images/hallticket folder.jpg">
+
+<h3>
+
+Hall Ticket Folder
+
+</h3>
+
+<p>
+
+₹149
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+name:"Hall Ticket Folder",
+price:149,
+img:"images/hallticket folder.jpg"
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+name:"Hall Ticket Folder",
+price:149,
+img:"images/hallticket folder.jpg"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/pouch.webp">
+
+<h3>
+
+Transparent Pouch
+
+</h3>
+
+<p>
+
+₹99
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+name:"Transparent Pouch",
+price:99,
+img:"images/pouch.webp"
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+name:"Transparent Pouch",
+price:99,
+img:"images/pouch.webp"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/bluepen.jpg">
+
+<h3>
+
+Blue / Black Pens
+
+</h3>
+
+<p>
+
+₹79
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+name:"Blue / Black Pens",
+price:79,
+img:"images/bluepen.jpg"
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+name:"Blue / Black Pens",
+price:79,
+img:"images/bluepen.jpg"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/calculator.webp">
+
+<h3>
+
+Calculator
+
+</h3>
+
+<p>
+
+₹799
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+name:"Calculator",
+price:799,
+img:"images/calculator.webp"
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+name:"Calculator",
+price:799,
+img:"images/calculator.webp"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/clipboard.webp">
+
+<h3>
+
+Clipboard
+
+</h3>
+
+<p>
+
+₹249
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+name:"Clipboard",
+price:249,
+img:"images/clipboard.webp"
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+name:"Clipboard",
+price:249,
+img:"images/clipboard.webp"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div
+style="
+text-align:center;
+margin-top:50px;
+">
+
+<a href="../products.html">
+
+<button class="secondary-btn">
+
+Continue Shopping
+
+</button>
+
+</a>
+
+</div>
+
+</section>
+
+
+
+
+
+<footer>
+
+<div>
+
+CampusKart
+
+</div>
+
+<div>
+
+Everything a Student Needs
+
+</div>
+
+<div>
+
+© 2026
+
+</div>
+
+</footer>
+
+
+
+
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>

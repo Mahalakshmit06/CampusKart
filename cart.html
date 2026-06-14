@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+
+CampusKart | Cart
+
+</title>
+
+<link
+rel="stylesheet"
+href="css/style.css">
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+<div class="logo">
+
+<a href="index.html">
+
+<img
+src="images/iykyk.jpeg"width="250px">
+
+</a>
+
+</div>
+
+
+
+<nav>
+
+<ul class="nav-links">
+
+<li>
+
+<a href="index.html">
+
+Home
+
+</a>
+
+</li>
+
+<li>
+
+<a href="products.html">
+
+Products
+
+</a>
+
+</li>
+
+<li>
+
+<a href="about.html">
+
+About
+
+</a>
+
+</li>
+
+</ul>
+
+</nav>
+
+
+
+<div class="nav-actions">
+
+<button
+class="icon-btn"
+onclick="openSearch()">
+
+🔍
+
+</button>
+
+
+
+<a href="wishlist.html">
+
+<button class="icon-btn">
+
+♡
+
+</button>
+
+</a>
+
+
+
+<a href="cart.html">
+
+<button class="icon-btn">
+
+🛒
+
+<span id="cartCount">
+
+0
+
+</span>
+
+</button>
+
+</a>
+
+</div>
+
+</header>
+
+
+
+
+
+<!-- CART -->
+
+<section class="home-categories">
+
+<h2>
+
+Your Cart
+
+</h2>
+
+<p
+style="
+text-align:center;
+margin-bottom:40px;
+color:#666;
+">
+
+Review products before checkout
+
+</p>
+
+
+
+<div id="cartItems">
+
+</div>
+
+
+
+
+
+<div class="total-box">
+
+<h2>
+
+Total:
+₹
+
+<span id="totalAmount">
+
+0
+
+</span>
+
+</h2>
+
+
+
+<div
+style="
+margin-top:25px;
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+">
+
+<a href="products.html">
+
+<button
+class="secondary-btn">
+
+Continue Shopping
+
+</button>
+
+</a>
+
+
+
+<button
+class="primary-btn"
+onclick="goCheckout()">
+
+Buy Now
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<section class="features">
+
+<div class="feature">
+
+🛒
+
+<h3>
+
+Secure Cart
+
+</h3>
+
+<p>
+
+Products remain saved
+
+</p>
+
+</div>
+
+
+
+<div class="feature">
+
+➕
+
+<h3>
+
+Quantity Control
+
+</h3>
+
+<p>
+
+Add or remove items
+
+</p>
+
+</div>
+
+
+
+<div class="feature">
+
+⚡
+
+<h3>
+
+Fast Checkout
+
+</h3>
+
+<p>
+
+Complete order quickly
+
+</p>
+
+</div>
+
+</section>
+
+
+
+
+
+<footer>
+
+<div>
+
+CampusKart
+
+</div>
+
+<div>
+
+Everything a Student Needs
+
+</div>
+
+<div>
+
+© 2026
+
+</div>
+
+</footer>
+
+
+
+
+
+<script src="js/script.js"></script>
+
+
+
+<script>
+
+function goCheckout(){
+
+const cart =
+
+JSON.parse(
+
+localStorage.getItem(
+"campuskartCart"
+)
+
+)||[];
+
+
+
+if(
+cart.length===0
+){
+
+alert(
+"Cart Empty"
+);
+
+return;
+
+}
+
+
+
+window.location.href=
+"checkout.html";
+
+}
+
+</script>
+
+</body>
+
+</html>

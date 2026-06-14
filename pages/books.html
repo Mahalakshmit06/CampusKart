@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+
+CampusKart | Books
+
+</title>
+
+<link
+rel="stylesheet"
+href="../css/style.css">
+
+</head>
+
+
+
+<body>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+<div class="logo">
+
+<a href="../index.html">
+
+<img
+src="../images/iykyk.jpeg" width="0px">
+
+</a>
+
+</div>
+
+
+<nav>
+
+<ul class="nav-links">
+
+<li><a href="../index.html">Home</a></li>
+
+<li><a href="../products.html">Products</a></li>
+
+<li><a href="../about.html">About</a></li>
+
+</ul>
+
+</nav>
+
+
+<div class="nav-actions">
+
+<button
+class="icon-btn"
+onclick="openSearch()">
+
+🔍
+
+</button>
+
+
+<a href="../wishlist.html">
+
+<button class="icon-btn">
+
+♡
+
+</button>
+
+</a>
+
+
+<a href="../cart.html">
+
+<button class="icon-btn">
+
+🛒
+
+<span id="cartCount">
+
+0
+
+</span>
+
+</button>
+
+</a>
+
+</div>
+
+</header>
+
+
+
+
+
+<section
+class="home-categories">
+
+<h1
+style="
+text-align:center;
+margin-bottom:40px;
+">
+
+📚 Books & Study Materials
+
+</h1>
+
+
+
+
+<div class="products">
+
+
+
+
+<!-- PRODUCT -->
+
+<div class="product-card">
+
+<img
+src="../images/notebook.webp">
+
+<h3>
+
+Notebooks
+
+</h3>
+
+<p>
+
+₹299
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick="addToCart({
+name:'Notebooks',
+price:299,
+img:'images/notebook.webp'
+})">
+
+Add To Cart
+
+</button>
+
+
+<button
+class="secondary-btn"
+
+onclick="addToWishlist({
+name:'Notebooks',
+price:299,
+img:'images/notebook.webp'
+})">
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="product-card">
+
+<img
+src="../images/textbook.jpg">
+
+<h3>
+
+Textbooks
+
+</h3>
+
+<p>
+
+₹699
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick="addToCart({
+name:'Textbooks',
+price:699,
+img:'images/textbook.jpg'
+})">
+
+Add To Cart
+
+</button>
+
+
+<button
+class="secondary-btn"
+
+onclick="addToWishlist({
+name:'Textbooks',
+price:699,
+img:'images/textbook.jpg'
+})">
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="product-card">
+
+<img
+src="../images/guide.jpg">
+
+<h3>
+
+Guides
+
+</h3>
+
+<p>
+
+₹399
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick="addToCart({
+name:'Guides',
+price:399,
+img:'images/guide.jpg'
+})">
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick="addToWishlist({
+name:'Guides',
+price:399,
+img:'images/guide.jpg'
+})">
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="product-card">
+
+<img
+src="../images/exambook.jpg">
+
+<h3>
+
+Exam Preparation Books
+
+</h3>
+
+<p>
+
+₹599
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick="addToCart({
+name:'Exam Preparation Books',
+price:599,
+img:'images/exambook.jpg'
+})">
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick="addToWishlist({
+name:'Exam Preparation Books',
+price:599,
+img:'images/exambook.jpg'
+})">
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="product-card">
+
+<img
+src="../images/story book.jpg">
+
+<h3>
+
+Story Books
+
+</h3>
+
+<p>
+
+₹349
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick="addToCart({
+name:'Story Books',
+price:349,
+img:'images/story book.jpg'
+})">
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick="addToWishlist({
+name:'Story Books',
+price:349,
+img:'images/story book.jpg'
+})">
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="product-card">
+
+<img
+src="../images/sticky notes.jpg">
+
+<h3>
+
+Sticky Notes
+
+</h3>
+
+<p>
+
+₹149
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick="addToCart({
+name:'Sticky Notes',
+price:149,
+img:'images/sticky notes.jpg'
+})">
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick="addToWishlist({
+name:'Sticky Notes',
+price:149,
+img:'images/sticky notes.jpg'
+})">
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="product-card">
+
+<img
+src="../images/flash cards.jpg">
+
+<h3>
+
+Flash Cards
+
+</h3>
+
+<p>
+
+₹179
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick="addToCart({
+name:'Flash Cards',
+price:179,
+img:'images/flash cards.jpg'
+})">
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick="addToWishlist({
+name:'Flash Cards',
+price:179,
+img:'images/flash cards.jpg'
+})">
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="product-card">
+
+<img
+src="../images/journal.jpg">
+
+<h3>
+
+Journals
+
+</h3>
+
+<p>
+
+₹269
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick="addToCart({
+name:'Journals',
+price:269,
+img:'images/journal.jpg'
+})">
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick="addToWishlist({
+name:'Journals',
+price:269,
+img:'images/journal.jpg'
+})">
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+
+
+<footer>
+
+<div>
+
+CampusKart
+
+</div>
+
+<div>
+
+Study Better
+
+</div>
+
+</footer>
+
+
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>

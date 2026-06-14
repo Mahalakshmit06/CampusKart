@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+CampusKart | Electronics & Gadgets
+</title>
+
+<link
+rel="stylesheet"
+href="../css/style.css">
+
+</head>
+
+<body>
+
+
+
+<header class="navbar">
+
+<div class="logo">
+
+<a href="../index.html">
+
+<img
+src="../images/iykyk.jpeg" width="250px">
+
+</a>
+
+</div>
+
+
+
+<nav>
+
+<ul class="nav-links">
+
+<li><a href="../index.html">Home</a></li>
+
+<li><a href="../products.html">Products</a></li>
+
+<li><a href="../about.html">About</a></li>
+
+</ul>
+
+</nav>
+
+
+
+<div class="nav-actions">
+
+<button
+class="icon-btn"
+onclick="openSearch()">
+
+🔍
+
+</button>
+
+
+
+<a href="../wishlist.html">
+
+<button class="icon-btn">
+
+♡
+
+</button>
+
+</a>
+
+
+
+<a href="../cart.html">
+
+<button class="icon-btn">
+
+🛒
+
+<span id="cartCount">
+
+0
+
+</span>
+
+</button>
+
+</a>
+
+</div>
+
+</header>
+
+
+
+
+
+<section class="home-categories">
+
+<h2>
+
+Electronics & Gadgets
+
+</h2>
+
+<p
+style="
+text-align:center;
+margin-bottom:40px;
+color:#666;
+">
+
+Study smarter with technology.
+
+</p>
+
+
+
+
+
+<div class="products">
+
+
+
+
+<div class="product-card">
+
+<img src="../images/laptop.webp">
+
+<h3>
+Laptop
+</h3>
+
+<p>
+₹54999
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+onclick='addToCart({
+name:"Laptop",
+price:54999,
+img:"images/laptop.webp"
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+onclick='addToWishlist({
+name:"Laptop",
+price:54999,
+img:"images/laptop.webp"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/tablet.webp">
+
+<h3>
+Tablet
+</h3>
+
+<p>
+₹21999
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+onclick='addToCart({
+name:"Tablet",
+price:21999,
+img:"images/tablet.webp"
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+onclick='addToWishlist({
+name:"Tablet",
+price:21999,
+img:"images/tablet.webp"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/mobile.webp">
+
+<h3>
+Mobile Phone
+</h3>
+
+<p>
+₹18999
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+onclick='addToCart({
+name:"Mobile Phone",
+price:18999,
+img:"images/mobile.webp"
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+onclick='addToWishlist({
+  name: "Mobile Phone",
+  price: 18999,
+  img:"images/mobile.webp"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/headphones.jpg">
+
+<h3>
+Earphones
+</h3>
+
+<p>
+₹1299
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+onclick='addToCart({
+name:"Earphones",
+price:1299,
+img:"images/headphones.jpg"
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+onclick='addToWishlist({
+name:"Earphones",
+price:1299,
+img:"images/headphones.jpg"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/earphones.jpg">
+
+<h3>
+Headphones
+</h3>
+
+<p>
+₹2499
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+onclick='addToCart({
+name:"Headphones",
+price:2499,
+img:"images/earphones.jpg"
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+onclick='addToWishlist({
+name:"Headphones",
+price:2499,
+img:"images/earphones.jpg"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/speaker.jpg">
+
+<h3>
+Speaker
+</h3>
+
+<p>
+₹2999
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+onclick='addToCart({
+name:"Speaker",
+price:2999,
+img:"images/speaker.jpg"
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+onclick='addToWishlist({
+name:"Speaker",
+price:2999,
+img:"images/speaker.jpg"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/mouse.webp">
+
+<h3>
+Mouse
+</h3>
+
+<p>
+₹899
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+onclick='addToCart({
+name:"Mouse",
+price:899,
+img:"images/mouse.webp"
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+onclick='addToWishlist({
+name:"Mouse",
+price:899,
+img:"images/mouse.webp"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/keyboard.webp">
+
+<h3>
+Keyboard
+</h3>
+
+<p>
+₹1799
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+onclick='addToCart({
+name:"Keyboard",
+price:1799,
+img:"images/keyboard.webp"
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+onclick='addToWishlist({
+name:"Keyboard",
+price:1799,
+img:"images/keyboard.webp"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/webcam.jpg">
+
+<h3>
+Webcam
+</h3>
+
+<p>
+₹3499
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+onclick='addToCart({
+name:"Webcam",
+price:3499,
+img:"images/webcam.jpg"
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+onclick='addToWishlist({
+name:"Webcam",
+price:3499,
+img:"images/webcam.jpg"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div
+style="
+text-align:center;
+margin-top:50px;
+">
+
+<a href="../products.html">
+
+<button class="secondary-btn">
+
+Continue Shopping
+
+</button>
+
+</a>
+
+</div>
+
+</section>
+
+
+
+
+
+<footer>
+
+<div>
+CampusKart
+</div>
+
+<div>
+Everything a Student Needs
+</div>
+
+<div>
+© 2026
+</div>
+
+</footer>
+
+
+
+
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>

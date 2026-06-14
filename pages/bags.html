@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+CampusKart | Bags & Carry
+</title>
+
+<link
+rel="stylesheet"
+href="../css/style.css">
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+<div class="logo">
+
+<a href="../index.html">
+
+<img
+src="../images/iykyk.jpeg" width="250px">
+
+</a>
+
+</div>
+
+
+
+<nav>
+
+<ul class="nav-links">
+
+<li>
+<a href="../index.html">
+Home
+</a>
+</li>
+
+<li>
+<a href="../products.html">
+Products
+</a>
+</li>
+
+<li>
+<a href="../about.html">
+About
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+
+
+<div class="nav-actions">
+
+<button
+class="icon-btn"
+onclick="openSearch()">
+
+🔍
+
+</button>
+
+
+
+<a href="../wishlist.html">
+
+<button class="icon-btn">
+
+♡
+
+</button>
+
+</a>
+
+
+
+<a href="../cart.html">
+
+<button class="icon-btn">
+
+🛒
+
+<span id="cartCount">
+
+0
+
+</span>
+
+</button>
+
+</a>
+
+</div>
+
+</header>
+
+
+
+
+
+<section class="home-categories">
+
+<h2>
+
+Bags & Carry
+
+</h2>
+
+<p
+style="
+text-align:center;
+margin-bottom:40px;
+color:#666;
+">
+
+Carry smarter. Study better.
+
+</p>
+
+
+
+
+
+<div class="products">
+
+
+
+
+
+<!-- PRODUCT -->
+
+<div class="product-card">
+
+<img
+src="../images/backpack.webp">
+
+<h3>
+
+Backpack
+
+</h3>
+
+<p>
+
+₹899
+
+</p>
+
+
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+
+name:"Backpack",
+
+price:899,
+
+img:"images/backpack.webp"
+
+})'>
+
+Add To Cart
+
+</button>
+
+
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+
+name:"Backpack",
+
+price:899,
+
+img:"images/backpack.webp"
+
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img
+src="../images/laptop bag.jpg">
+
+<h3>
+
+Laptop Bag
+
+</h3>
+
+<p>
+
+₹1499
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+
+name:"Laptop Bag",
+
+price:1499,
+
+img:"images/laptop bag.jpg"
+
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+
+name:"Laptop Bag",
+
+price:1499,
+
+img:"images/laptop bag.jpg"
+
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img
+src="../images/totebag.jpg">
+
+<h3>
+
+Tote Bag
+
+</h3>
+
+<p>
+
+₹799
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+
+name:"Tote Bag",
+
+price:799,
+
+img:"images/totebag.jpg"
+
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+
+name:"Tote Bag",
+
+price:799,
+
+img:"images/totebag.jpg"
+
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img
+src="../images/slingbag.jpg">
+
+<h3>
+
+Sling Bag
+
+</h3>
+
+<p>
+
+₹699
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+
+name:"Sling Bag",
+
+price:699,
+
+img:"images/slingbag.jpg"
+
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+
+name:"Sling Bag",
+
+price:699,
+
+img:"images/slingbag.jpg"
+
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img
+src="../images/travel bag.jpg">
+
+<h3>
+
+Travel Bag
+
+</h3>
+
+<p>
+
+₹1899
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+
+name:"Travel Bag",
+
+price:1899,
+
+img:"images/travel bag.jpg"
+
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+
+name:"Travel Bag",
+
+price:1899,
+
+img:"images/travel bag.jpg"
+
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img
+src="../images/lunvhbag.webp">
+
+<h3>
+
+Lunch Bag
+
+</h3>
+
+<p>
+
+₹499
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+
+name:"Lunch Bag",
+
+price:499,
+
+img:"images/lunvhbag.webp"
+
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+
+name:"Lunch Bag",
+
+price:499,
+
+img:"images/lunvhbag.webp"
+
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+<div
+style="
+text-align:center;
+margin-top:50px;
+">
+
+<a href="../products.html">
+
+<button
+class="secondary-btn">
+
+Continue Shopping
+
+</button>
+
+</a>
+
+</div>
+
+</section>
+
+
+
+
+
+<footer>
+
+<div>
+
+CampusKart
+
+</div>
+
+<div>
+
+Everything a Student Needs
+
+</div>
+
+<div>
+
+© 2026
+
+</div>
+
+</footer>
+
+
+
+
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>
+

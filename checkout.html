@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+
+CampusKart | Checkout
+
+</title>
+
+<link
+rel="stylesheet"
+href="css/style.css">
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+<div class="logo">
+
+<a href="index.html">
+
+<img
+src="images/iykyk.jpeg" width="250px">
+
+</a>
+
+</div>
+
+
+
+<nav>
+
+<ul class="nav-links">
+
+<li>
+
+<a href="index.html">
+
+Home
+
+</a>
+
+</li>
+
+<li>
+
+<a href="pages/products.html">
+
+Products
+
+</a>
+
+</li>
+
+<li>
+
+<a href="about.html">
+
+About
+
+</a>
+
+</li>
+
+</ul>
+
+</nav>
+
+
+
+<div class="nav-actions">
+
+<button
+class="icon-btn"
+onclick="openSearch()">
+
+🔍
+
+</button>
+
+
+
+<a href="wishlist.html">
+
+<button class="icon-btn">
+
+♡
+
+</button>
+
+</a>
+
+
+
+<a href="cart.html">
+
+<button class="icon-btn">
+
+🛒
+
+<span id="cartCount">
+
+0
+
+</span>
+
+</button>
+
+</a>
+
+</div>
+
+</header>
+
+
+
+
+
+<section class="checkout-box">
+
+<h1>
+
+Checkout
+
+</h1>
+
+<p
+style="
+margin-top:10px;
+color:#666;
+">
+
+Complete your order details
+
+</p>
+
+
+
+<!-- ORDER SUMMARY -->
+
+<div
+class="total-box"
+style="margin-top:30px;">
+
+<h2>
+
+Order Summary
+
+</h2>
+
+
+
+<div
+id="orderSummary">
+
+</div>
+
+
+
+<h3
+style="
+margin-top:25px;
+">
+
+Total:
+₹
+
+<span id="checkoutTotal">
+
+0
+
+</span>
+
+</h3>
+
+</div>
+
+
+
+
+
+<!-- FORM -->
+
+<input
+id="name"
+type="text"
+placeholder="Full Name">
+
+
+
+<input
+id="email"
+type="email"
+placeholder="Email Address">
+
+
+
+<input
+id="phone"
+type="tel"
+placeholder="Phone Number">
+
+
+<input
+
+id="address"
+type="Address"
+placeholder="Delivery Address">
+
+
+
+
+
+<select id="payment">
+
+<option value="">
+
+Choose Payment
+
+</option>
+
+<option>
+
+Cash On Delivery
+
+</option>
+
+<option>
+
+UPI
+
+</option>
+
+<option>
+
+Credit Card
+
+</option>
+
+<option>
+
+Debit Card
+
+</option>
+
+</select>
+
+
+
+<button
+class="primary-btn"
+style="
+margin-top:30px;
+width:100%;
+"
+
+onclick="confirmOrder()">
+
+Place Order
+
+</button>
+
+</section>
+
+
+
+
+
+<footer>
+
+<div>
+
+CampusKart
+
+</div>
+
+<div>
+
+Safe Checkout
+
+</div>
+
+<div>
+
+© 2026
+
+</div>
+
+</footer>
+
+
+
+
+
+<script src="js/script.js"></script>
+
+
+
+<script>
+
+/* =====================
+ORDER SUMMARY
+===================== */
+
+function renderSummary(){
+
+const cart =
+
+JSON.parse(
+
+localStorage.getItem(
+"campuskartCart"
+)
+
+)||[];
+
+
+
+const box =
+
+document.getElementById(
+"orderSummary"
+);
+
+
+
+const totalBox =
+
+document.getElementById(
+"checkoutTotal"
+);
+
+
+
+if(
+cart.length===0
+){
+
+box.innerHTML=
+
+`
+
+<div>
+
+No Products Added
+
+</div>
+
+`;
+
+return;
+
+}
+
+
+
+let total=0;
+
+box.innerHTML="";
+
+
+
+cart.forEach(
+
+item=>{
+
+total+=
+
+item.price
+*
+item.qty;
+
+
+
+box.innerHTML+=
+
+`
+
+<div
+style="
+padding:18px;
+margin-top:15px;
+background:white;
+border-radius:18px;
+">
+
+<h3>
+
+${item.name}
+
+</h3>
+
+<p>
+
+Qty:
+${item.qty}
+
+</p>
+
+<p>
+
+₹${item.price}
+
+</p>
+
+</div>
+
+`;
+
+}
+
+);
+
+
+
+totalBox.innerText=
+total;
+
+}
+
+
+
+/* =====================
+FINAL ORDER
+===================== */
+
+function confirmOrder(){
+
+const name=
+document.getElementById(
+"name"
+).value.trim();
+
+
+
+const email=
+document.getElementById(
+"email"
+).value.trim();
+
+
+
+const phone=
+document.getElementById(
+"phone"
+).value.trim();
+
+
+
+const address=
+document.getElementById(
+"address"
+).value.trim();
+
+
+
+const payment=
+document.getElementById(
+"payment"
+).value;
+
+
+
+const cart =
+
+JSON.parse(
+
+localStorage.getItem(
+"campuskartCart"
+)
+
+)||[];
+
+
+
+if(
+cart.length===0
+){
+
+alert(
+"Cart Empty"
+);
+
+return;
+
+}
+
+
+
+if(
+
+!name||
+
+!email||
+
+!phone||
+
+!address||
+
+!payment
+
+){
+
+alert(
+"Fill all details"
+);
+
+return;
+
+}
+
+
+
+alert(
+
+`🎉 Order Confirmed
+
+Name:
+${name}
+
+Payment:
+${payment}
+
+Thank You for shopping with CampusKart`
+
+);
+
+
+
+localStorage.removeItem(
+"campuskartCart"
+);
+
+
+
+window.location.href=
+"index.html";
+
+}
+
+
+
+renderSummary();
+
+</script>
+
+</body>
+
+</html>

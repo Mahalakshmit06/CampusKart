@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+CampusKart | Art & Creative Supplies
+</title>
+
+<link
+rel="stylesheet"
+href="../css/style.css">
+
+</head>
+
+<body>
+
+
+
+<header class="navbar">
+
+<div class="logo">
+
+<a href="../index.html">
+
+<img
+src="../images/iykyk.jpeg" width="250px">
+
+</a>
+
+</div>
+
+
+
+<nav>
+
+<ul class="nav-links">
+
+<li><a href="../index.html">Home</a></li>
+
+<li><a href="../products.html">Products</a></li>
+
+<li><a href="../about.html">About</a></li>
+
+</ul>
+
+</nav>
+
+
+
+<div class="nav-actions">
+
+<button
+class="icon-btn"
+onclick="openSearch()">
+
+🔍
+
+</button>
+
+
+
+<a href="../wishlist.html">
+
+<button class="icon-btn">
+
+♡
+
+</button>
+
+</a>
+
+
+
+<a href="../cart.html">
+
+<button class="icon-btn">
+
+🛒
+
+<span id="cartCount">
+
+0
+
+</span>
+
+</button>
+
+</a>
+
+</div>
+
+</header>
+
+
+
+
+
+<section class="home-categories">
+
+<h2>
+
+Art & Creative Supplies
+
+</h2>
+
+<p
+style="
+text-align:center;
+margin-bottom:40px;
+color:#666;
+">
+
+Create. Imagine. Design.
+
+</p>
+
+
+
+
+
+<div class="products">
+
+
+
+
+<div class="product-card">
+
+<img src="../images/paints.jpg">
+
+<h3>
+
+Paints
+
+</h3>
+
+<p>
+
+₹349
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+name:"Paints",
+price:349,
+img:"images/paints.jpg"
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+name:"Paints",
+price:349,
+img:"images/paints.jpg"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/canvas.webp">
+
+<h3>
+
+Canvas
+
+</h3>
+
+<p>
+
+₹499
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+name:"Canvas",
+price:499,
+img:"images/canvas.webp"
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+name:"Canvas",
+price:499,
+img:"images/canvas.webp"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/sketchbook.webp">
+
+<h3>
+
+Sketch Book
+
+</h3>
+
+<p>
+
+₹249
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+name:"Sketch Book",
+price:249,
+img:"images/sketchbook.webp"
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+name:"Sketch Book",
+price:249,
+img:"images/sketchbook.webp"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/paintbrush.jpg">
+
+<h3>
+
+Brushes
+
+</h3>
+
+<p>
+
+₹199
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+name:"Brushes",
+price:199,
+img:"images/paintbrush.jpg"
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+name:"Brushes",
+price:199,
+img:"images/paintbrush.jpg"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/craftpaper.jpg">
+
+<h3>
+
+Craft Papers
+
+</h3>
+
+<p>
+
+₹149
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+name:"Craft Papers",
+price:149,
+img:"images/craftpaper.jpg"
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+name:"Craft Papers",
+price:149,
+img:"images/craftpaper.jpg"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/clay.jpg">
+
+<h3>
+
+Clay
+
+</h3>
+
+<p>
+
+₹199
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+name:"Clay",
+price:199,
+img:"images/clay.jpg"
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+name:"Clay",
+price:199,
+img:"images/clay.jpg"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="../images/colorpencils.webp">
+
+<h3>
+
+Color Pencils
+
+</h3>
+
+<p>
+
+₹279
+
+</p>
+
+<div class="product-actions">
+
+<button
+class="primary-btn"
+
+onclick='addToCart({
+name:"Color Pencils",
+price:279,
+img:"images/colorpencils.webp"
+})'>
+
+Add To Cart
+
+</button>
+
+<button
+class="secondary-btn"
+
+onclick='addToWishlist({
+name:"Color Pencils",
+price:279,
+img:"images/colorpencils.webp"
+})'>
+
+♡ Wishlist
+
+</button>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div
+style="
+text-align:center;
+margin-top:50px;
+">
+
+<a href="../products.html">
+
+<button class="secondary-btn">
+
+Continue Shopping
+
+</button>
+
+</a>
+
+</div>
+
+</section>
+
+
+
+
+
+<footer>
+
+<div>
+
+CampusKart
+
+</div>
+
+<div>
+
+Everything a Student Needs
+
+</div>
+
+<div>
+
+© 2026
+
+</div>
+
+</footer>
+
+
+
+
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>
